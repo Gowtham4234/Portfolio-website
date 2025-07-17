@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0e1a2b 0%, #1a2740 100%);
+  color: #f0f0f0;
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(17, 26, 46, 0.95);
+  padding: 1rem 2rem ;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.25);
+  backdrop-filter: blur(4px);
+  transition: background 0.3s;
+}
+
+nav .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #00ffe1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00ffe1;
+}
+
+.section {
+  padding: 100px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#home .content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#home .content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  background: linear-gradient(90deg, #00ffe1 0%, #00bfff 100%);
+  color: #000;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px 0 rgba(0,255,225,0.15);
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #00bfff 0%, #00ffe1 100%);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 24px 0 rgba(0,255,225,0.25);
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.skill {
+  background: #1c2b3d;
+  padding: 1.2rem 2.2rem;
+  border-radius: 12px;
+  transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+  font-size: 1.1rem;
+}
+
+.skill:hover {
+  background: linear-gradient(90deg, #00ffe1 0%, #00bfff 100%);
+  color: #000;
+  transform: translateY(-4px) scale(1.07);
+  box-shadow: 0 8px 32px 0 rgba(0,255,225,0.15);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #111a2e;
+  color: #aaa;
+}
