@@ -41,7 +41,7 @@ A modern, interactive personal portfolio website to showcase your skills, projec
 
 ## Screenshots
 
-![Portfolio Screenshot](screenshot.png)
+![Portfolio Screenshot](/public/Screenshot.png)
 
 ## License
 
